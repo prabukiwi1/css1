@@ -5,7 +5,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </head>
 <body>
-    <p>Final Charit()</p>
+    <p>Final fill</p>
     <canvas id="chart" width="400" height="400">
     </canvas>
 <script type="text/javascript">
@@ -19,11 +19,12 @@
     
 
 const myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
         labels: xlabels,
         datasets: [{
             label: 'Global Temperature',
+            fill:false,
             data: ytemp,
             backgroundColor:'rgba(255, 99, 132, 0.2)',
                 
