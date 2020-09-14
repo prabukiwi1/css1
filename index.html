@@ -11,7 +11,7 @@
     }
 </style>
 <body>
-    <h1>Employee Details</h1>
+    <h1>---Employee Details---</h1>
     <button type="button" onclick="loadDoc()">GetEmployee Details</button>
     <br><br>
     <table id="test"></table>
@@ -41,7 +41,7 @@
             x[i].getElementsByTagName("ename")[0].childNodes[0].nodeValue+
             "</td><td>"+
             x[i].getElementsByTagName("eage")[0].childNodes[0].nodeValue+
-            "</td><tr>";
+            "</td></tr>";
         }
         document.getElementById("test").innerHTML=table;
 
