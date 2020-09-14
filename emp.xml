@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO8859-1" ?>
+<Company>
+	<employee>
+		<name>Kevin</name>
+		<age>28</age>
+		<designation>Developer</designation>
+		<salary>50000</salary>
+	</employee>
+	<employee>
+		<name>Mala</name>
+		<age>31</age>
+		<designation>Senior Developer</designation>
+		<salary>70000</salary>
+	</employee>
+	<employee>
+		<name>Rithul</name>
+		<age>45</age>
+		<designation>TL</designation>
+		<salary>100000</salary>
+	</employee>
+</Company>
