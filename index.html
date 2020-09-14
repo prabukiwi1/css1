@@ -5,17 +5,19 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 </head>
 <body>
-    <p>updated chart graph</p>
+    <p>updated chart graph canvas</p>
     <canvas id="chart" width="400" height="400">
     </canvas>
 <script type="text/javascript">
-    var ctx = document.getElementById('chart').getContext('2d');
-var myChart = new Chart(ctx, {
+    const ctx = document.getElementById('chart').getContext('2d');
+    const xlabels=[];
+
+const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: xlabels,
         datasets: [{
-            label: '# of Votes',
+            label: 'Global Temperature',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -56,6 +58,7 @@ var myChart = new Chart(ctx, {
         {
             const columns=row.split(',');
             const year=columns[0];
+            xlabels.push(year);
             const temp=columns[1];
             console.log(year,temp);
         });
