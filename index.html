@@ -11,11 +11,10 @@
     }
 </style>
 <body>
-    <p>final</p>
     <h1>Employee Details</h1>
     <button type="button" onclick="loadDoc()">Get Employee Details</button>
     <br><br>
-    <table id="test"></table>
+    <table id="demo"></table>
     <script type="text/javascript">
         function loadDoc()
         {
@@ -34,19 +33,18 @@
         {
             var i;
             var xmlDoc=xml.responseXML;
-            var table="<tr><th>Emp-name</th><th>AGE</th></tr>";
+            var table="<tr><th>ENAME</th><th>EAGE</th></tr>";
             var x=xmlDoc.getElementsByTagName("employee");
             for(i=0;i<x.length;i++)
             {
                 table+="<tr><td>"+
                 x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue+
                 "</td><td>"+
-                x[i].getElementsByTagName("age")[0].childNodes[0].nodeValue+
-                "</td></tr>"
+                x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue+
+                "</td></tr>";
             }
-            document.getElementById("test").innerHTML=table;
+            document.getElementById("demo").innerHTML=table;
             }
-        
     </script>
-    </body>
-    </html>
+</body>
+</html>
